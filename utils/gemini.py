@@ -4,7 +4,9 @@ import google.generativeai as genai
 
 load_dotenv()
 key = os.getenv("GEMINI_API_KEY")
-print("Loaded Key:", key[:15] + "...")
+
+if not key:
+    raise ValueError("GEMINI_API_KEY not found.")
 
 genai.configure(api_key=key)
 
