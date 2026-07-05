@@ -49,6 +49,39 @@ Medical reports are often written using technical terminology that many patients
 GeneGuide AI converts complicated medical reports into clear, patient-friendly explanations while encouraging users to seek professional medical advice for diagnosis and treatment decisions.
 
 ---
+---
+
+# 📸 Application Preview
+
+## 🏠 Home Page
+
+![Home](assets/home.png)
+
+---
+
+## 📄 Report Explanation
+
+![Report](assets/report.png)
+
+---
+
+## 📊 Health Snapshot
+
+![Snapshot](assets/snapshot.png)
+
+---
+
+## 📝 Summary
+
+![Summary](assets/summary.png)
+
+---
+
+## 💊 Medicine Explainer
+
+![Medicine](assets/medicine.png)
+
+---
 
 ## ⚠️ Disclaimer
 
