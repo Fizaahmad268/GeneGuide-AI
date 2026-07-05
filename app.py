@@ -124,15 +124,27 @@ with left:
 
     st.title("🧬 GeneGuide AI")
 
-    st.markdown("## AI-Powered Medical Report Explainer")
+    st.markdown("## Because Every Patient Deserves to Understand Their Health")
 
     st.write("""
-Medical reports are written for doctors, not patients.
+A medical report should provide clarity—not confusion.
 
-GeneGuide AI converts difficult medical reports into
-simple, patient-friendly explanations so everyone can
-understand their health with confidence.
+GeneGuide AI transforms complex medical language into simple,
+easy-to-understand explanations so patients and families can better
+understand their reports without replacing professional medical advice.
+
+🤖 AI-powered explanations
+
+📄 Report analysis
+
+💬 Interactive AI assistant
+
+💊 Medicine explanations
+
+🌍 Multilingual support
 """)
+ 
+   
 
 with right:
 
@@ -143,7 +155,14 @@ with right:
     )
 
 st.divider()
+st.info("""
+### 🎯 Our Mission
 
+Healthcare information should be understandable by everyone.
+
+GeneGuide AI helps patients better understand their reports,
+reducing confusion while encouraging consultation with healthcare professionals.
+""")
 # ---------------- FEATURE CARDS ---------------- #
 
 c1,c2,c3,c4=st.columns(4)
@@ -168,6 +187,58 @@ language=st.selectbox(
     "🌍 Choose Explanation Language",
     ["English","Urdu"]
 )
+st.markdown("## ♿ Accessibility Features")
+
+st.markdown("""
+✅ Simple language
+
+✅ English & Urdu
+
+✅ AI explanations
+
+✅ Patient-friendly summaries
+
+✅ Medicine explanations
+
+🔊 Voice Assistant (Coming Soon)
+""")
+st.divider()
+
+st.markdown("## ⚙️ How GeneGuide AI Works")
+
+step1, step2, step3 = st.columns(3)
+
+with step1:
+    st.info("""
+### 📤 Step 1
+
+Upload your medical report
+(PDF or Image)
+""")
+
+with step2:
+    st.info("""
+### 🤖 Step 2
+
+AI analyzes the report
+and explains medical terms.
+""")
+
+with step3:
+    st.info("""
+### ❤️ Step 3
+
+Receive an easy-to-understand
+summary with recommendations.
+""")
+    
+
+st.success("""
+🔒 **Privacy First**
+
+Your uploaded medical reports are analyzed only for generating explanations.
+GeneGuide AI does not store your personal medical data.
+""")    
 
 # ---------------- FILE UPLOADER ---------------- #
 
@@ -284,11 +355,13 @@ if uploaded_file:
 
    # ---------- ANALYZE BUTTON ---------- #
 
-if st.button("🧬 Analyze Report", width="stretch"):
+if st.button("🧬 Analyze Report with AI", width="stretch"):
 
     try:
 
-        with st.spinner("🧬 GeneGuide AI is analyzing your report..."):
+       with st.spinner(
+    "🧠 Reading report... 🔬 Understanding medical terminology... 🤖 Generating patient-friendly explanation..."
+):
 
             if uploaded_file.type == "application/pdf":
 
@@ -474,7 +547,7 @@ question = st.text_input(
 
 if st.session_state.get("explanation"):
 
-    if st.button("💬 Ask AI", width="stretch"):
+    if st.button("💬 Ask GeneGuide AI", width="stretch"):
 
         if question.strip():
 
@@ -559,7 +632,9 @@ st.markdown(
 
     <h3>🧬 GeneGuide AI</h3>
 
-    <p>Made with ❤️ for patients and families.</p>
+    <p>Made with ❤️ to make healthcare information accessible for everyone..</p>
+
+    <p>Empowering patients through accessible AI-powered healthcare explanations. 🧬</p>
 
     <p><b>CTRL-V Hackathon 2026</b></p>
 
